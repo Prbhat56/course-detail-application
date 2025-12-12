@@ -1,16 +1,46 @@
-# course_assignment_app
+# Course Manager
 
-A new Flutter project.
+A Flutter mobile application for managing courses with offline support, built using Clean Architecture and BLoC state management.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+-  Course List Screen with search and category filter
+-  Add/Edit Course with form validation
+-  Delete Course with confirmation dialog
+-  Course Details Screen
+-  Offline-first architecture (SQLite)
+-  Mock API integration for categories
+-  Clean Architecture with clear separation of concerns
+-  BLoC state management
+-  Proper error handling and loading states
+-  Responsive UI design
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The app follows Clean Architecture with these layers:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Domain Layer
+- Entities (Course, Category)
+- Repository interfaces
+- Use cases
+
+### Data Layer
+- Data sources (Local SQLite, Remote API)
+- Repository implementations
+- Models
+
+### Presentation Layer
+- BLoC for state management
+- Pages and Widgets
+
+## Setup Instructions
+
+### Prerequisites
+- Flutter SDK (>=3.0.0)
+- Dart (>=3.0.0)
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd course_manager
